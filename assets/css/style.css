@@ -27,13 +27,34 @@ body {
     font-size: 0.9rem;
 }
 
+#sidebar .fa-house,
+#sidebar .fa-spotify,
+#sidebar-playlist h3 {
+    color: white;
+}
+
+#houseicon {
+   box-shadow: -5px -5px px 5px rgb(40, 184, 11)
+}
+
+.green1 {
+    height: 22px;
+    width: 2px;
+    background-color: green;
+}
+
+.left{
+    top:-2px;
+    left: -1rem;
+}
+
 #sidebar #logo-sidebar {
     display: none;
 }
 
 .padd-bar {
-    padding: 0.5rem 1rem;
-    height: calc(100vh - 180px);
+    padding: 0.5rem 0.5rem;
+    height: calc(100vh - 100px);
 }
 
 #sidebar .flex-column .flex,
@@ -70,6 +91,10 @@ font-weight: bold;
     display: none;
 }
 
+#bottom-icon i{
+    font-size: 1rem;
+}
+
 #circle-user{
     background-color: grey;
     width: 40px;
@@ -86,13 +111,6 @@ font-weight: bold;
  
 /* hover per sidebar */
 
-#sidebar i:hover {
-    color: white;
-}
-
-#sidebar span:hover {
-    color: white;
-}
 
 /* container centrale */
 
@@ -104,12 +122,12 @@ font-weight: bold;
 
 #header {
     flex-basis: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(8,11,18);
     height: 100px;
 }
 
 #main_container {
-    background-color: rgb(58, 56, 56);
+    background-color:rgb(20,25,34);
     height: calc(100vh - 200px);
     flex-basis: 100%;
 }
@@ -123,7 +141,7 @@ font-weight: bold;
 
 
 #player {
-    background-color: gray;
+    background-color: rgb(40,40,40);
     height: 100px;
 }
 
@@ -166,5 +184,10 @@ font-weight: bold;
     #sidebar hr {
      
         display: block;
+    }
+
+    .padd-bar {
+        height: calc(100vh - 180px);
+        padding: 0.5rem 1rem;
     }
 }
