@@ -22,28 +22,79 @@ body {
     flex-grow: 0;
     background-color: black;
    height: calc(100vh - 100px);
-   padding: 0.5rem 1rem
+    color:rgb(108,108,108);
+    overflow: auto;
+    font-size: 0.9rem;
 }
 
 #sidebar #logo-sidebar {
-    height: 100px;
     display: none;
 }
+
+.padd-bar {
+    padding: 0.5rem 1rem;
+}
+
+#sidebar .flex-column .flex,
+ul, li, hr{
+    margin-top: 0.7rem;
+}
+#sidebar h3 {
+    margin-top: 1.2rem;
+}
+
+
+#bottom-icon {
+    position: absolute;
+    bottom: 10px;
+}
+
+#user span {
+font-size: 1.2rem;
+font-weight: bold;
+}
+
 
 
 
 #sidebar i{
-    font-size: 1.3rem;
-    color:rgb(255,255,255);
+    font-size: 1.5rem;
+    color:rgb(108,108,108);
 }
 
 #sidebar span {
-    color:rgb(255,255,255);
     display: none;
 }
-   
 
+#sidebar #sidebar-playlist {
+    display: none;
+}
 
+#circle-user{
+    background-color: grey;
+    height: 2rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+#circle-user img{
+    height: 100%;
+    width:100%
+}
+
+ 
+/* hover per sidebar */
+
+#sidebar i:hover {
+    color: white;
+}
+
+#sidebar span:hover {
+    color: white;
+}
+
+/* container centrale */
 
 #central {
     height: calc(100vh - 100px);
@@ -74,4 +125,45 @@ body {
 #player {
     background-color: gray;
     height: 100px;
+}
+
+
+
+
+@media screen and ( min-width:425px) {
+
+    #sidebar {
+        flex-basis: 200px;
+    }
+
+    #sidebar i {
+        font-size: 1rem;
+    }
+    
+
+    #sidebar .fa-brands{
+        display: none;
+    }
+
+    #sidebar span, {
+        font-size: 1rem;
+    }
+
+    #sidebar .fa-square-plus {
+        font-size: 2rem;
+    }
+
+
+    #sidebar #logo-sidebar {
+        height: 80px;
+        display: block;
+        padding: 1.5rem 1rem;
+
+    }
+
+    #sidebar span,
+    #sidebar #sidebar-playlist {
+     
+        display: block;
+    }
 }

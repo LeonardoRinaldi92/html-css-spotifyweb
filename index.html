@@ -18,31 +18,70 @@
         <!-- flex_container -->
         <div class="flex">
             <!-- sidebar -->
-            <div id="sidebar">
-                <!-- icone sidebar -->
+            <div id="sidebar" class="p-relative">
                 <div id="logo-sidebar">
                     <img src="./assets/img/logo.svg" alt="">
-
                 </div>
-                <div>
-                    <i class="fa-brands fa-spotify"></i>
-                    <div class="flex-sidebar">
-                        <i class="fa-solid fa-house"></i>
-                        <span>
-                            Home
-                        </span>
+                <!-- icone sidebar -->
+                <div class="padd-bar flex-column">
+                    <!-- *!SECTION loghi in alto -->
+                    <div>
+                        <i class="fa-brands fa-spotify"></i>
+                        <div id="houseicon" class="flex al-cntr">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="mr-l5">
+                                Home
+                            </span>
+                        </div>
+                        <div class="flex al-cntr">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span class="mr-l5">
+                                Cerca
+                            </span>
+                        </div>
+                        <div class="flex al-cntr">
+                            <i class="fa-solid fa-lines-leaning"></i>
+                            <span class="mr-l5">
+                                La tua libreria
+                            </span>
+                        </div>
                     </div>
-                    <div class="flex-sidebar">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <span>
-                            Cerca
-                        </span>
+                    <div id="sidebar-playlist">
+                        <h3>
+                            PLAYLIST
+                        </h3>
+                        <div class="flex al-item-cntr wrap">
+                            <i class="fa-solid fa-square-plus"></i>
+                            <h4 class="mr-l5">
+                                Crea playlist
+                            </h4>
+                        </div>
+                        <ul class="list-none">
+                            <li>La tua Playlist</li>
+                            <li>La tua Playlist</li>
+                            <li>La tua Playlist</li>
+                            <li>La tua Playlist</li>
+                            <li>La tua Playlist</li>
+                            <li>La tua Playlist</li>
+                            <li>La tua Playlist</li>
+                        </ul>
                     </div>
-                    <div class="flex-sidebar">
-                        <i class="fa-solid fa-lines-leaning"></i>
-                        <span>
-                            La tua libreria
-                        </span>
+                    <div id="bottom-icon">
+                        <div class="flex al-item-cntr wrap">
+                            <i class="fa-regular fa-circle-down"></i>
+                            <span class="mr-l5">
+                                installa app
+                            </span>
+                        </div>
+                        <hr>
+                        <div id="user" class="flex al-item-cntr wrap">
+                            <div id="circle-user">
+                                <img src="./assets/img/profile.svg" alt="">
+                            </div>
+                            <span class="mr-l5"> 
+                                Lello R.
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
