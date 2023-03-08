@@ -33,6 +33,7 @@ body {
 
 .padd-bar {
     padding: 0.5rem 1rem;
+    height: calc(100vh - 400px);
 }
 
 #sidebar .flex-column .flex,
@@ -43,11 +44,6 @@ ul, li, hr{
     margin-top: 1.2rem;
 }
 
-
-#bottom-icon {
-    position: absolute;
-    bottom: 10px;
-}
 
 #user span {
 font-size: 1.2rem;
@@ -72,7 +68,7 @@ font-weight: bold;
 
 #circle-user{
     background-color: grey;
-    height: 2rem;
+    width: 40px;
     aspect-ratio: 1;
     border-radius: 50%;
     object-fit: cover;
