@@ -160,6 +160,7 @@
     display: flex;
 }
 
+
 .jst-spcaround {
     justify-content:space-around;
 }
@@ -178,6 +179,10 @@
     
 .al-cntr {
     align-content:center ;
+}
+
+.al-end {
+    align-content:flex-end ;
 }
 
 .al-spcaround {

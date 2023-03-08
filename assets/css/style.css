@@ -108,7 +108,7 @@ font-weight: bold;
     width:100%
 }
 
- 
+
 /* hover per sidebar */
 
 
@@ -138,11 +138,80 @@ font-weight: bold;
 
 
 
-
+/* player */
 
 #player {
     background-color: rgb(40,40,40);
     height: 100px;
+}
+
+.col40 {
+    flex-basis: 40%;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    height: 100px;
+}
+
+.col40 .fa-circle-play{
+    font-size: 2rem;
+}
+
+.col40 i {
+    color: white;
+}
+
+.background-bar {
+    width: 60%;
+    height: 8px;
+    background-color: rgb(80, 80, 80);
+    border-radius: 5px;
+}
+
+.grey-bar {
+    width: 20%;
+    height: 8px;
+    background-color: rgb(191, 191, 191);
+    border-radius: 5px;
+}
+
+.timer {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+}
+
+.col30 {
+    flex-basis: 30%;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    height: 100px;
+}
+.volume i {
+    color: white;
+}
+.col-bot40{
+    flex-basis: 40%;
+}
+
+.col-bot60{
+    flex-basis:58%;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.col-bot60 span {
+    font-size: 0.6rem;
+}
+
+.col-bot40 img {
+    width: 30px;
+}
+
+.col-bot40 i{
+    font-size: 0.8rem;
+    color: white;
+}
+
+input[type=range]{
+    width: 60%;
+    height: 3px;
 }
 
 
@@ -157,7 +226,7 @@ font-weight: bold;
     #sidebar i {
         font-size: 1rem;
     }
-    
+
 
     #sidebar .fa-brands{
         display: none;
@@ -182,7 +251,7 @@ font-weight: bold;
     #sidebar span,
     #sidebar #sidebar-playlist,
     #sidebar hr {
-     
+
         display: block;
     }
 
