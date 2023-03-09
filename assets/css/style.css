@@ -108,6 +108,24 @@ font-weight: bold;
     width:100%
 }
 
+#main_container {
+    padding: 0rem 1rem;
+}
+
+#main_container h5 {
+    text-transform: uppercase;
+    color:rgb(108,108,108);
+}
+
+.col-barra{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.70rem;
+    flex-basis: 25%;
+    text-align: center;
+}
+
+
 
 /* hover per sidebar */
 
@@ -270,10 +288,19 @@ input[type=range]{
         width: 40px;
     }
 
+    .col-barra{
+        flex-basis:calc(100%/3);
+    }
+
    
 }
 
 @media screen and ( min-width:528px) {
+
+    .col-barra{
+       font-size: 1rem;
+    }
+    
 
     .col-bot40 img {
         width: 50px;
@@ -317,6 +344,10 @@ input[type=range]{
 }
 
 @media screen and ( min-width:728px) {
+
+    .col-barra{
+        flex-basis: 20%;
+     }
 
     .col-bot40 img {
         width: 65px;
@@ -368,6 +399,10 @@ input[type=range]{
 
 @media screen and ( min-width:886px) {
 
+    .col-barra{
+        flex-basis:calc(100%/6);
+     }
+
     .pulsanti {
         width: 75%;
         margin: 0 auto;
@@ -376,6 +411,11 @@ input[type=range]{
 }
 
 @media screen and ( min-width:1024px) {
+
+    .barra-top {
+        width: 60%;
+        margin: auto;
+    }
 
     .pulsanti {
         width: 70%;
