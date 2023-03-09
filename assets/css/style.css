@@ -21,7 +21,7 @@ body {
     flex-basis: 50px;
     flex-grow: 0;
     background-color: black;
-   height: calc(100vh - 100px);
+   height: calc(100% - 100px);
     color:rgb(108,108,108);
     overflow: auto;
     font-size: 0.9rem;
@@ -31,10 +31,7 @@ body {
 #sidebar .fa-spotify,
 #sidebar-playlist h3 {
     color: white;
-}
-
-#houseicon {
-   box-shadow: -5px -5px px 5px rgb(40, 184, 11)
+    opacity: 100%;
 }
 
 .green1 {
@@ -43,17 +40,12 @@ body {
     background-color: green;
 }
 
-.left{
-    top:-2px;
-    left: -1rem;
-}
 
 #sidebar #logo-sidebar {
     display: none;
 }
 
 .padd-bar {
-    padding: 0.5rem 0.5rem;
     height: calc(100vh - 100px);
 }
 
@@ -65,18 +57,26 @@ ul, li, hr{
     margin-top: 1.2rem;
 }
 
+#houseicon {
+    margin-top: 0;
+ }
+ 
+
 
 #user span {
 font-size: 1.2rem;
 font-weight: bold;
 }
 
+.hv-white {
+    padding: 0rem 0.5rem 0rem 0.5rem
+}
 
 
 
 #sidebar i{
     font-size: 1.5rem;
-    color:rgb(108,108,108);
+    opacity: 60%;
 }
 
 #sidebar span {
@@ -93,6 +93,10 @@ font-weight: bold;
 
 #bottom-icon i{
     font-size: 1rem;
+}
+
+#user {
+    padding-bottom: 10px;
 }
 
 #circle-user{
@@ -119,15 +123,35 @@ font-weight: bold;
 
 .col-barra{
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-size: 0.70rem;
     flex-basis: 25%;
-    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.gap10 {
+    gap: 5px;
+}
+
+/* hover per sidebar */
+
+#sidebar .hv-white:not(h3, #user):hover{
+    color: white;
+}
+
+#sidebar .hv-white:not(h3, .no-green):hover{
+    border-left: 3px solid greenyellow;
 }
 
 
 
-/* hover per sidebar */
+#sidebar .hv-white:hover i{
+    opacity: 1;
+}
+
+#main_container .hv1-white h5:hover{
+    color: white;
+}
 
 
 /* container centrale */
@@ -178,7 +202,7 @@ font-weight: bold;
 }
 
 .background-bar {
-    width: 60%;
+    width: 80%;
     height: 8px;
     background-color: rgb(80, 80, 80);
     border-radius: 5px;
@@ -238,10 +262,19 @@ input[type=range]{
     height: 6px;
 }
 
+.grey-line {
+    opacity: 40%;
+   margin: auto;
+    width: calc(100% - 2rem); 
+}
 
 
 
 @media screen and ( min-width:425px) {
+
+    .hv-white {
+        padding: 0rem 1rem 0rem 1rem
+    }
 
     #sidebar {
         flex-basis: 200px;
@@ -266,10 +299,9 @@ input[type=range]{
 
 
     #sidebar #logo-sidebar {
-        height: 80px;
+        height: 100px;
         display: block;
-        padding: 1.5rem 1rem;
-
+        padding: 1rem;
     }
 
     #sidebar span,
@@ -280,8 +312,7 @@ input[type=range]{
     }
 
     .padd-bar {
-        height: calc(100vh - 180px);
-        padding: 0.5rem 1rem;
+        height: calc(100vh - 200px);
     }
 
     .col-bot40 img {
