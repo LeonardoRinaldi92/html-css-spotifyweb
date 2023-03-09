@@ -113,7 +113,7 @@ font-weight: bold;
 }
 
 #main_container {
-    padding: 0rem 1rem;
+    padding: 8rem 1rem 1rem 1rem; 
     overflow: auto;
 }
 
@@ -132,6 +132,22 @@ font-weight: bold;
 
 .gap10 {
     gap: 5px;
+}
+
+.button {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    line-height: 120px;
+    margin-right: 2%;
+    color: white;
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 0.8rem 1.5rem;
+    cursor:pointer;
+}
+
+#header .button:hover {
+    font-size: 0.8rem
 }
 
 /* hover*/
@@ -155,6 +171,7 @@ font-weight: bold;
 
 #player i:not(.play-button, .sound-off):hover {
     font-size: 1.5rem;
+
 }
 
 #player .sound-off:hover {
@@ -205,14 +222,19 @@ font-weight: bold;
 
 
 #header {
-    flex-basis: 100%;
-    background-color: rgb(8,11,18);
+    text-align: end;
+    background-color: rgba(8, 11, 18, 0.514);
     height: 100px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+    z-index: 1;
 }
 
 #main_container {
     background-color:rgb(20,25,34);
-    height: calc(100vh - 200px);
+    height: calc(100vh - 100px);
     flex-basis: 100%;
 }
 
@@ -256,6 +278,7 @@ font-weight: bold;
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
 
 }
 
@@ -298,6 +321,7 @@ font-weight: bold;
 #player {
     background-color: rgb(40,40,40);
     height: 100px;
+    z-index: 2;
 }
 
 .col40 {
@@ -571,10 +595,10 @@ input[type=range]{
      }
 
      #main_container .barra-top {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         margin-bottom: 2rem;
-        margin-top: 1rem;
+        margin-top: rem;
     }
 
     .pulsanti {
@@ -603,7 +627,6 @@ input[type=range]{
         width: 80%;
         margin: 0 auto;
         margin-bottom: 2rem;
-        margin-top: 1rem;
     }
 
     .col-bot40{
@@ -628,9 +651,9 @@ input[type=range]{
 }
 
 
-@media screen and ( min-width:1300px) {
+@media screen and ( min-width:1150px) {
 
-    .barra-top {
+    #main_container .barra-top {
         width: 65%;
         margin: auto;
     }
