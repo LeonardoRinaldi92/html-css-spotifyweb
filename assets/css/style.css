@@ -443,6 +443,15 @@ input[type=range]{
     .col40 {
         flex-basis: 40%;
     }
+
+    #music .flex {
+        justify-content: flex-start;
+        gap:2%;  }
+
+    #music .img-card {
+        flex-basis:calc(100% / 4 - 2%);
+        margin: 1rem 0 1rem;
+    }
     
     .col-bot40{
         flex-basis: 25%;
@@ -489,14 +498,23 @@ input[type=range]{
 
 @media screen and ( min-width:1024px) {
 
-    .barra-top {
-        width: 80%;
-        margin: auto;
+    #music .img-card {
+        flex-basis:calc(100% / 6 - 2%);
+        margin-bottom: 2rem;
     }
+    
+
 
     .pulsanti {
         width: 70%;
         margin: 0 auto;
+    }
+
+    #main_container .barra-top {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
     }
 
     .col-bot40{
