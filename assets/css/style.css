@@ -114,6 +114,7 @@ font-weight: bold;
 
 #main_container {
     padding: 0rem 1rem;
+    overflow: auto;
 }
 
 #main_container h5 {
@@ -175,6 +176,51 @@ font-weight: bold;
 }
 
 
+#music .img-card {
+    flex-basis:calc(100% / 2 - 2%);
+    text-align: center;
+    margin: 0.5rem 0 1rem;
+}
+
+#music{
+    padding-bottom: ;
+}
+
+
+.img-card img {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+#music h3 {
+    color: white;
+
+}
+
+#music h5 {
+    text-transform: none;
+    color: white;
+}
+
+#music h6 {
+    color: grey;
+    text-transform: none;
+}
+
+.circle{
+    background-color: grey;
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.circle img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+}
 
 
 
