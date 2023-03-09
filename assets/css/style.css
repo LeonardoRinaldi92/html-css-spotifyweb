@@ -413,7 +413,7 @@ input[type=range]{
 @media screen and ( min-width:1024px) {
 
     .barra-top {
-        width: 60%;
+        width: 80%;
         margin: auto;
     }
 
@@ -440,5 +440,21 @@ input[type=range]{
 
     .col30.volume {
         flex-basis: 25%;
+    }
+}
+
+@media screen and ( min-width:1024px) {
+
+    .barra-top {
+        width: 75%;
+        margin: auto;
+    }
+}
+
+@media screen and ( min-width:1300px) {
+
+    .barra-top {
+        width: 65%;
+        margin: auto;
     }
 }
