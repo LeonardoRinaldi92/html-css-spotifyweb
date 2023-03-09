@@ -487,7 +487,15 @@ input[type=range]{
 
     .col-barra{
         flex-basis:calc(100%/6);
+        text-align: center;
      }
+
+     #main_container .barra-top {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
 
     .pulsanti {
         width: 75%;
@@ -497,6 +505,7 @@ input[type=range]{
 }
 
 @media screen and ( min-width:1024px) {
+
 
     #music .img-card {
         flex-basis:calc(100% / 6 - 2%);
@@ -538,13 +547,6 @@ input[type=range]{
     }
 }
 
-@media screen and ( min-width:1024px) {
-
-    .barra-top {
-        width: 75%;
-        margin: auto;
-    }
-}
 
 @media screen and ( min-width:1300px) {
 
