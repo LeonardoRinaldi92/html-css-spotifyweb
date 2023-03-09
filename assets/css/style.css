@@ -245,10 +245,6 @@ font-weight: bold;
     margin: 0.5rem 0 1rem;
 }
 
-#music{
-    padding-bottom: ;
-}
-
 
 .img-card img {
     width: 100%;
@@ -439,7 +435,7 @@ input[type=range]{
         display: none;
     }
 
-    #sidebar span, {
+    #sidebar span {
         font-size: 1rem;
     }
 
