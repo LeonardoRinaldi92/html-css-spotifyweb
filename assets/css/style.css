@@ -26,6 +26,7 @@ body {
     color:rgb(108,108,108);
     overflow: auto;
     font-size: 0.9rem;
+    z-index: 2;
 }
 
 #sidebar .fa-house,
@@ -65,7 +66,7 @@ ul, li, hr{
 
 
 #user span {
-font-size: 1.2rem;
+font-size: 1rem;
 font-weight: bold;
 }
 
@@ -74,8 +75,11 @@ font-weight: bold;
 #sidebar span,
 #sidebar h4,
 #main_container .hv1-white{
-    padding: 0rem 0.5rem 0rem 0.5rem;
     cursor: pointer; 
+}
+
+#sidebar .hv-white{
+    padding: 0rem 0.5rem 0rem 0.5rem;
 }
 
 #sidebar-playlist h3 {
@@ -87,6 +91,8 @@ cursor:default;
     font-size: 1.5rem;
     opacity: 60%;
 }
+
+
 
 #sidebar span {
     display: none;
@@ -105,7 +111,8 @@ cursor:default;
 }
 
 #user {
-    padding-bottom: 10px;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
 }
 
 #circle-user{
