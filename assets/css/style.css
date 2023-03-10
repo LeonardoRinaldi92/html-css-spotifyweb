@@ -136,6 +136,7 @@ cursor:default;
 #main_container h5 {
     text-transform: uppercase;
     color:rgb(108,108,108);
+    position: relative;
 }
 
 .col-barra{
@@ -167,6 +168,19 @@ cursor:default;
 }
 
 /* hover*/
+
+#main_container .barra-top .hv1-white:hover h5::after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    height: 3px;
+    width: 20%;
+    background-color: greenyellow;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+
+}
 
 #sidebar .hv-white:not(h3, #user):hover{
     color: white;
